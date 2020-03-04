@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="advanced-search-link" remove="true"/>
+        <referenceBlock name="search-term-popular-link" remove="true"/>
+        <referenceBlock name="sales-guest-form-link" remove="true"/>
+        <referenceBlock name="catalog-search-advanced-link" remove="true"/>
+        <referenceBlock name='report.bugs' remove='true'/>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_img_width" xsi:type="number">126</argument>
+                <argument name="logo_img_height" xsi:type="number">27</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name='footer_links' remove='true'/>
+        <move element="form.subscribe" destination="footer-container" before="-"/>
+        <referenceContainer name="footer">
+            <container name="footer_container" as="footer_container" label="Footer Container" htmlTag="div" htmlClass="footer-container" before="-">
+            <block class="Magento\Theme\Block\Html\Footer" name="footer_content" template="html/footer.phtml"/>
+            </container>
+        </referenceContainer> 
+    </body>
+</page>

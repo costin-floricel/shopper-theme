@@ -1,0 +1,24 @@
+//
+//    Common
+//--------------------------------------
+
+& when (@media-common = true) {
+  .lib-font-face(
+    @family-name: @font-family-name__base,
+    @font-path: '@{baseDir}fonts/Lato/Lato-Regular',
+    @font-weight: 400,
+    @font-style: normal
+  );
+
+  .lib-font-face(
+    @family-name: @font-family-name__regular,
+    @font-path: '@{baseDir}fonts/Montserrat/Montserrat-Regular',
+    @font-weight: 400,
+    @font-style: normal
+  );
+
+
+  .items {
+    .lib-list-reset-styles();
+  }
+}
