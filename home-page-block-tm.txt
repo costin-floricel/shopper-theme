@@ -28,3 +28,7 @@
 <div class="blocks-promo"><a class="block-promo home-main" href="{{store url=""}}collections/yoga-new.html"><img src="{{view url="images/accesories.jpg"}}" alt=""></a> <a class=" block-promo home-main" href="{{store url=""}}collections/yoga-new.html"> <img src="{{view url="images/shoes.jpg"}}" alt=""> </a></div>
 <p>{{widget type="Magento\Catalog\Block\Product\Widget\NewWidget" display_type="all_products" products_count="3" template="product/widget/new/content/new_grid.phtml"}}</p>
 <div class="blocks-promo"><a class="block-promo home-main" href="{{store url=""}}collections/yoga-new.html"><img src="{{view url="images/new_arivals.jpg"}}" alt=""></a> <a class=" block-promo home-main" href="{{store url=""}}collections/yoga-new.html"> <img src="{{view url="images/sale.jpg"}}" alt=""></a></div>
+
+
+
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="19"}}</p>
